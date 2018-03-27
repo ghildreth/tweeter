@@ -1,0 +1,28 @@
+#nav-bar {
+    background-color: #00a087;
+    position: fixed;
+    width: 100%;
+    color: #e8fdff;
+    padding-left: 2em;
+    padding-right: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.logo {
+    height: 80px;
+    width: 80px;
+    float: left;
+}
+
+span.header {
+    float: left;
+    font-size: 200%;
+    display: flex;
+}
+}
+
+
+
+
