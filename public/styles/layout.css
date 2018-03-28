@@ -23,44 +23,7 @@ body {
   background-color: #eee;
 }
 
-main.container {
-  width: 450px;
-  height: 450px;
-  margin: auto;
-  background-color: white;
-  padding-top: 140px;
-  background-image: url(http://kija-handmade.nl/files/8554/webshopartikelen/1253496/thumbs/geometrische-kolibri.png);
-  /*background-repeat: no-repeat, repeat;*/
-}
 
-h2 {
-  background: #00a087;
-  text-align: center;
-  text-decoration: underline;
-}
-
-textarea {
-  background: #00a087;
-  border-width: 5px;
-  opacity: 0.8;
-  width: 100%;
-  padding: 3em;
-  border-radius: 25px;
-}
-
-input {
-  /*background: grey;*/
-  /*color: transparent;*/
-}
-
-.counter {
-  float: right;
-}
-
-form {
-  padding-left: 2em;
-  padding-right: 2em;
-}
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions

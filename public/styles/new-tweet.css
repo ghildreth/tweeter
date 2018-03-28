@@ -1,38 +1,49 @@
 main.container {
   width: 450px;
-  height: 450px;
+  height: 1000px;
   margin: auto;
   background-color: white;
-  padding-top: 140px;
-  background-image: url(http://kija-handmade.nl/files/8554/webshopartikelen/1253496/thumbs/geometrische-kolibri.png);
-  /*background-repeat: no-repeat, repeat;*/
+  padding: 140px 2em 0;
+
 }
 
 h2 {
-  background: #00a087;
-  text-align: center;
-  text-decoration: underline;
+  margin-top: 3px;
+  background: #eee;
+  text-align: left;
+  border-bottom: black 1px solid;
 }
 
 textarea {
-  background: #00a087;
-  border-width: 5px;
-  opacity: 0.8;
+  background: #white;
+  border-width: 1px;
+/*  opacity: 0.8;*/
   width: 100%;
-  padding: 3em;
-  border-radius: 25px;
+  padding: 0.5em;
 }
 
 input {
-  /*background: grey;*/
-  /*color: transparent;*/
+
 }
 
 .counter {
   float: right;
 }
 
+.error {
+  color: red;
+}
+
 form {
-  padding-left: 2em;
-  padding-right: 2em;
+
+}
+
+section {
+  background: #eee;
+  border-color: #dedada;
+  border-radius: 8px;
+  border-width: 1px;
+  border-style: solid;
+  padding: 8px;
+
 }
