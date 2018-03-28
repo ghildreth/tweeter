@@ -1,13 +1,17 @@
-article {
+article.tweet{
   opacity: 1.0;
-  background: white;
+/*  background: white;*/
   border-color: #dedada;
   border-radius: 8px;
   border-width: 1px;
   border-style: solid;
   margin-top: 10px;
-  height: 200px;
   position: relative;
+
+}
+
+header.tweet-header h2 {
+  border-bottom: 0;
 }
 
 header.tweet-header{
@@ -22,8 +26,9 @@ header.tweet-header{
 footer {
   height: 25px;
   padding: 3px;
-  margin: 2px;
+  margin-top: 45px;
   display: flex;
+  border-top: black 1px solid;
   justify-content: space-between;
 }
 
@@ -33,21 +38,17 @@ img.avatar {
   margin: 6px;
 }
 
-h1 {
+h2 {
   margin-top: 0px;
   font-size: 2em;
 }
 
-h3 {
+h4 {
   float: right;
   margin-top: -40px;
   margin-right: 15px;
 }
 
-p {
-  padding: 10px;
-  margin: 25px;
-}
 
 article:hover header.tweet-header {
   border: black 1px solid;
@@ -70,6 +71,18 @@ img.icon {
   width: 20px;
 }
 
-.numberofdays {
-  float: left;
+
+section.tweet-container {
+  background: #eee;
+  border-radius: 8px;
+  border-width: 1px;
+  border-style: solid;
+  padding: 8px;
+  margin-top: 10px
+
+}
+
+p.iconz {
+  margin-bottom: 0px;
+  margin-top: 0px;
 }

@@ -1,6 +1,6 @@
 main.container {
   width: 450px;
-  height: 1000px;
+  height: 2000px;
   margin: auto;
   background-color: white;
   padding: 140px 2em 0;
@@ -33,12 +33,22 @@ input {
   color: red;
 }
 
-section {
+section.tweet-container {
   background: #eee;
-  border-color: #dedada;
   border-radius: 8px;
   border-width: 1px;
   border-style: solid;
   padding: 8px;
+  margin-top: 10px
+
+}
+
+section.new-tweet {
+  background: #eee;
+  border-radius: 8px;
+  border-width: 1px;
+  border-style: solid;
+  padding: 8px;
+  margin-top: 10px
 
 }
