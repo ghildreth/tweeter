@@ -1,9 +1,10 @@
 main.container {
   width: 450px;
-  height: 2000px;
+  height: 100%;
   margin: auto;
   background-color: white;
   padding: 140px 2em 0;
+  padding-bottom: 30px;
 
 }
 
