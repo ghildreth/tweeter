@@ -1,17 +1,25 @@
 article.tweet{
-  opacity: 1.0;
-/*  background: white;*/
+  opacity: .7;
   border-color: #dedada;
   border-radius: 8px;
   border-width: 1px;
   border-style: solid;
   margin-top: 20px;
   position: relative;
+  width: 100%;
 
 }
 
 header.tweet-header h2 {
   border-bottom: 0;
+}
+
+div.textBox {
+  padding-left: 10px;
+  width: 100%;
+  word-wrap: break-word;
+  padding-right: 10px;
+ ;
 }
 
 header.tweet-header{
@@ -41,6 +49,7 @@ img.avatar {
 h2 {
   margin-top: 0px;
   font-size: 2em;
+  border-radius: 7px;
 }
 
 h4 {
@@ -49,19 +58,13 @@ h4 {
   margin-right: 15px;
 }
 
-
-article:hover header.tweet-header {
-  border: black 1px solid;
-  opacity: .7;
-}
-
-article:hover footer.tweet-footer {
-
-  opacity: .7;
-}
-
 article:hover img.icon {
   display: block;
+}
+
+article:hover {
+  opacity: 1;
+  border: black 1px solid;
 }
 
 img.icon {
@@ -82,7 +85,12 @@ section.tweet-container {
 
 }
 
-p.iconz {
+span.iconz {
   margin-bottom: 0px;
-  margin-top: 0px;
+  margin-top: -1px;
+  padding-right: 5px;
+}
+
+span.numberofdays {
+  padding-left: 5px;
 }

@@ -1,23 +1,17 @@
 $(document).ready(function () {
-  console.log('ready, steady, go!');
   const maxCharLength = 140;
   const errorClass = 'error';
 
-  $("textarea").on ('input', function() {
+  $("textarea").on ('input', function(event) {
     let counter = $(this).siblings('.counter')
-    let currentText = $(this).val().length;
-    let subtract = maxCharLength - currentText;
-    counter.text(subtract);
+    let userCharInput = $(this).val().length;
+    let charRemaining = maxCharLength - userCharInput;
+    counter.text(charRemaining);
 
-    if(subtract < 0) {
+    if (charRemaining < 0) {
       counter.addClass(errorClass);
     } else {
       counter.removeClass(errorClass);
     }
   });
-
-  });
-
-
-
-// console.log("SUP MY TWEETERZ!");
+});

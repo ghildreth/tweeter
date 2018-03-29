@@ -81,7 +81,7 @@ $(function () {
     $h4.text(handle);
     $header.append($h4);
 
-    let $p = $("<p>");
+    let $p = $("<div>").addClass("textBox");
     $p.text(text);
     $tweet.append($p);
 
@@ -92,7 +92,7 @@ $(function () {
     $days.text(days);
     $footer.append($days);
 
-    let $pIcon = $("<p>").addClass("iconz")
+    let $pIcon = $("<span>").addClass("iconz")
     $footer.append($pIcon);
     let $flag = $("<img>").addClass("icon");
     $flag.attr('src', "../images/download.jpeg");
@@ -117,24 +117,24 @@ $(function () {
     });
   }
 
-  $('#submission-form form').on('submit', function(event) {
-    event.preventDefault();
-
-    var data = $('#submission-form form').serialize()
-
-    console.log(data);
-
-    $.post("/tweets/", data).done(function () {
-      console.log("sure, yeah, uh huh, yup");
-      loadTweets(data);
-    })
-  })
-
-  function loadTweets() {
-    $.get('/tweets/').done(function (tweetData) {
-      renderTweets(tweetData);
-    })
+  function sendTweet (tweet) {
+    $.post("/tweets/", tweet).done(loadTweets);
   }
 
+  $('#submission-form form').on('submit', function(e) {
+    e.preventDefault();
+    const text = $(this).find('textarea').val();
+    if (text.length && text.length <= 140) {
+      sendTweet({ text })
+    } else if (text.length > 140){
+      alert("You entered over 140 characters!");
+    } else {
+      alert("Please enter more than one character!")
+    }
+  });
+
+  function loadTweets() {
+    $.get('/tweets/').done(renderTweets);
+  }
   loadTweets();
 });
