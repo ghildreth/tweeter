@@ -55,11 +55,10 @@
 $(function () {
 
   function createTweetElement (tweet) {
-    // console.log(tweet);
-    let username = tweet['user'].name;
+    let username = tweet.user.name;
     let avatars = tweet.user.avatars.small;
-    let handle = tweet['user'].handle;
-    let text = tweet['content'].text;
+    let handle = tweet.user.handle;
+    let text = tweet.content  .text;
     let days = moment(tweet.created_at).fromNow();
 
 
@@ -70,7 +69,6 @@ $(function () {
     $tweet.append($header);
 
     let $img = $("<img>").addClass("avatar");
-    $img.attr('src', avatars);
     $header.append($img);
 
     let $h2 = $("<h2>");
@@ -123,18 +121,33 @@ $(function () {
 
   $('#submission-form form').on('submit', function(e) {
     e.preventDefault();
-    const text = $(this).find('textarea').val();
+    const text = $(this).find('textarea').val().trim();
+    const counterVal = $('counter');
     if (text.length && text.length <= 140) {
       sendTweet({ text })
+      this.reset();
+      $(".counter").html(140);
     } else if (text.length > 140){
-      alert("You entered over 140 characters!");
+      $.flash("You entered over 140 characters!");
+      $(".counter").html(140).removeClass('error');
     } else {
-      alert("Please enter more than one character!")
+      $.flash("Please enter atleast one character!")
+      $(".counter").html(140);
     }
   });
 
   function loadTweets() {
     $.get('/tweets/').done(renderTweets);
   }
+
+  let $toggler = $(".new-tweet");
+  let $textInput = $("textarea");
+
+  $("#compose").click(function() {
+    $toggler.slideToggle(function () {
+      $textInput.focus();
+    });
+  });
+
   loadTweets();
 });

@@ -5,7 +5,6 @@ main.container {
   background-color: white;
   padding: 140px 2em 0;
   padding-bottom: 30px;
-
 }
 
 h2 {
@@ -34,22 +33,12 @@ input {
   color: red;
 }
 
-section.tweet-container {
-  background: #eee;
-  border-radius: 8px;
-  border-width: 1px;
-  border-style: solid;
-  padding: 8px;
-  margin-top: 10px
-
-}
-
 section.new-tweet {
   background: #eee;
   border-radius: 8px;
   border-width: 1px;
   border-style: solid;
   padding: 8px;
-  margin-top: 10px
-
+  margin-top: 10px;
+  display: none;
 }

@@ -7,7 +7,6 @@ article.tweet{
   margin-top: 20px;
   position: relative;
   width: 100%;
-
 }
 
 header.tweet-header h2 {
@@ -19,8 +18,8 @@ div.textBox {
   width: 100%;
   word-wrap: break-word;
   padding-right: 10px;
- ;
 }
+
 
 header.tweet-header{
   background: #eee;

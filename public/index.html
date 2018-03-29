@@ -13,6 +13,9 @@
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
 
+    <!-- Flash CSS -->
+    <link rel="stylesheet" href="/vendor/flash.css" type="text/css" />
+
     <!-- App Nav ... CSS? -->
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
 
@@ -32,7 +35,10 @@
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
 
     <!-- Moments JS -->
-     <script type="text/javascript" src="/scripts/moment.min.js"></script>
+     <script type="text/javascript" src="/vendor/moment.min.js"></script>
+
+    <!-- Flash JS -->
+     <script type="text/javascript" src="/vendor/jquery-flash.js"></script>
 
   </head>
 
@@ -42,6 +48,7 @@
     <nav id="nav-bar">
       <img class="logo" src="/images/bird.png">
       <span class="header">Tweeter</span>
+      <input id="compose" type="button" style="background-image: url('images/compose-edit.png')">
     </nav>
 
     <!-- Page-specific (main) content here -->
@@ -57,6 +64,22 @@
          </div>
       </section>
       <section id="tweets-container">
+      <!-- <article class="tweet">
+        <header class="tweet-header">
+          <img class="avatar" src="https://vanillicon.com/d55cf8e18b47d4baaf60c006a0de39e1_50.png">
+          <h2> G-man </h2>
+          <h4> g@g.g </h4>
+        </header>
+        <p> Little tweet... </p>
+        <footer>
+          <span class="numberofdays"> 7 of days ago </span>
+          <p class="iconz">
+          <img class="icon" src="../images/download.jpeg">
+          <img class="icon" src="../images/images.png">
+          <img class="icon" src="../images/save.png">
+        </p>
+        </footer>
+       </article> -->
       </section>
     </main>
 
