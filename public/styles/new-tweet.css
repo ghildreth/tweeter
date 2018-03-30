@@ -7,10 +7,11 @@ main.container {
   padding-bottom: 30px;
 }
 
-h2 {
+.new-tweet h2 {
   margin-top: 3px;
   background: #eee;
   text-align: left;
+  border-radius: 0px;
   border-bottom: black 1px solid;
 }
 

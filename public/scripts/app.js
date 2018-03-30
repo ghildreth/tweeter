@@ -128,10 +128,10 @@ $(function () {
       this.reset();
       $(".counter").html(140);
     } else if (text.length > 140){
-      $.flash("You entered over 140 characters!");
+      $.flash("Please keep your tweet within 140 characters!");
       $(".counter").html(140).removeClass('error');
     } else {
-      $.flash("Please enter more than one character!")
+      $.flash("Empty strings are null and void. Please enter a value that's atleast one character!")
       $(".counter").html(140);
     }
   });
