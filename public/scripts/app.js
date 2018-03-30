@@ -126,6 +126,7 @@ $(function () {
     if (text.length && text.length <= 140) {
       sendTweet({ text })
       this.reset();
+      $('#tweets-container').empty();
       $(".counter").html(140);
     } else if (text.length > 140){
       $.flash("Please keep your tweet within 140 characters!");
