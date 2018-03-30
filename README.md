@@ -4,8 +4,8 @@ This project highlights my skill with AJAX to create a twitter clone having the 
 
 ## Screenshots
 
-!["Screenshot of Tweet Compose box"]()
-!["Screenshot of Tweet Wall'"]()
+!["Screenshot of Tweet Compose box"](https://github.com/ghildreth/tweeter/blob/master/docs/Screenshot%20from%202018-03-29%2019-18-41.png?raw=true)
+!["Screenshot of Tweet Wall'"](https://github.com/ghildreth/tweeter/blob/master/docs/Screenshot%20from%202018-03-29%2019-16-42.png?raw=true)
 
 
 ## Getting Started
